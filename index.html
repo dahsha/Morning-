@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering, Contracting, and Real Estate Office</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: url('construction.jpg') no-repeat center center/cover;
+            color: black;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.5rem;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        nav a {
+            color: white !important;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffc107 !important;
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #ffc107;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .section-title {
+            margin-bottom: 3rem;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 id="header-title">مكتبك الياسر للخدمات الهندسية والمقاولات والعقارات</h1>
+            <p id="header-description">نقدم لك الحلول المتكاملة لمشاريعك وخدماتك العقارية</p>
+            <a href="#services" class="btn btn-warning btn-lg mt-4" id="header-btn">اكتشف خدماتنا</a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">مكتبك الياسر للخدمات الهندسية</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id="nav-contact">اتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials" id="nav-testimonials">شهادات العملاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" id="nav-projects">مشاريعنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#properties" id="nav-properties">عقاراتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#engineering-services" id="nav-engineering-services">الخدمات الهندسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" id="nav-services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#showcase" id="nav-showcase">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-light" onclick="changeLanguage('ar')">عربي</button>
+                        <button class="btn btn-light" onclick="changeLanguage('en')">English</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title" id="services-title">خدماتنا</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-gear-fill"></i>
+                            </div>
+                            <h3 class="card-title" id="service1-title">إدارة المشاريع</h3>
+                            <p class="card-text" id="service1-description">نقوم بإدارة مشاريعك من البداية إلى النهاية مع ضمان الجودة والالتزام بالجدول الزمني.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-lightbulb-fill"></i>
+                            </div>
+                            <h3 class="card-title" id="service2-title">الاستشارات الهندسية</h3>
+                            <p class="card-text" id="service2-description">نوفر لك استشارات هندسية متخصصة لمساعدتك في اتخاذ القرارات الصحيحة لمشروعك.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-handshake-fill"></i>
+                            </div>
+                            <h3 class="card-title" id="service3-title">الوساطة والتفاوض</h3>
+                            <p class="card-text" id="service3-description">نحن نعمل كوسيط بينك وبين المقاولين لضمان حصولك على أفضل العروض والأسعار.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="engineering-services" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title" id="engineering-services-title">خدماتنا الهندسية</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h3 class="card-title" id="eng-service1-title">تصميم المباني</h3>
+                            <p class="card-text" id="eng-service1-description">تصميم معماري وهندسي متكامل للمباني السكنية والتجارية والصناعية.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-bricks"></i>
+                            </div>
+                            <h3 class="card-title" id="eng-service2-title">تحليل التربة</h3>
+                            <p class="card-text" id="eng-service2-description">إجراء اختبارات تحليل التربة لتحديد صلاحيتها للبناء وضمان الاستقرار.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="service-icon mb-3">
+                                <i class="bi bi-tools"></i>
+                            </div>
+                            <h3 class="card-title" id="eng-service3-title">إدارة الجودة</h3>
+                            <p class="card-text" id="eng-service3-description">مراقبة جودة المواد والأعمال في الموقع لضمان تحقيق المعايير المطلوبة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title" id="projects-title">مشاريعنا السابقة</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="project1.jpg" class="card-img-top" alt
+<img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title" id="project1-title">مشروع سكني فاخر</h3>
+                            <p class="card-text" id="project1-description">إدارة كاملة من التصميم إلى التسليم، مع التركيز على التفاصيل والراحة.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h3 class="card-title" id="project2-title">جسر للمشاة</h3>
+                            <p class="card-text" id="project2-description">حل مبتكر لتسهيل حركة المشاة في منطقة مزدحمة.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h3 class="card-title" id="project3-title">مجمع تجاري حديث</h3>
+                            <p class="card-text" id="project3-description">إشراف كامل على بناء مجمع تجاري متكامل في موقع استراتيجي.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="properties" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title" id="properties-title">عقاراتنا</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="property1.jpg" class="card-img-top" alt="Property 1">
+                        <div class="card-body">
+                            <h3 class="card-title" id="property1-title">شقة سكنية في المدينة</h3>
+                            <p class="card-text" id="property1-description">شقة مريحة ومجهزة بالكامل في موقع مركزي.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="property2.jpg" class="card-img-top" alt="Property 2">
+                        <div class="card-body">
+                            <h3 class="card-title" id="property2-title">فيلا فاخرة</h3>
+                            <p class="card-text" id="property2-description">فيلا بمواصفات عالية وتصميم عصري في حي هادئ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="property3.jpg" class="card-img-top" alt="Property 3">
+                        <div class="card-body">
+                            <h3 class="card-title" id="property3-title">مكتب تجاري</h3>
+                            <p class="card-text" id="property3-description">مكتب تجاري في موقع استراتيجي، مثالي للشركات الصغيرة والمتوسطة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title" id="testimonials-title">شهادات العملاء</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title" id="testimonial1-name">أحمد سعيد</h3>
+                            <p class="card-text" id="testimonial1-description">"خدمة ممتازة، كانت التجربة رائعة من البداية إلى النهاية."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title" id="testimonial2-name">سارة محمد</h3>
+                            <p class="card-text" id="testimonial2-description">"فريق محترف قدم لنا الحلول المثالية لمشروعنا."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title" id="testimonial3-name">محمد علي</h3>
+                            <p class="card-text" id="testimonial3-description">"أفضل خدمات إدارة المشاريع التي تعاملت معها، شكراً لكم!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title" id="contact-title">اتصل بنا</h2>
+            <p id="contact-info">إذا كان لديك أي استفسارات أو تحتاج إلى مزيد من المعلومات، لا تتردد في الاتصال بنا عبر التفاصيل التالية:</p>
+            <p><strong id="contact-email">البريد الإلكتروني:</strong> info@example.com</p>
+            <p><strong id="contact-phone">رقم الهاتف:</strong> +123 456 7890</p>
+            <p><strong id="contact-address">العنوان:</strong> شارع المثال، المدينة، الدولة</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p id="footer-text">© 2024 مكتبك للخدمات الهندسية والمقاولات والعقارات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Link Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('header-title').innerText = 'Your Engineering, Contracting, and Real Estate Office';
+                document.getElementById('header-description').innerText = 'We provide you with comprehensive solutions for your projects and real estate needs';
+                document.getElementById('header-btn').innerText = 'Discover Our Services';
+                
+                document.getElementById('services-title').innerText = 'Our Services';
+                document.getElementById('service1-title').innerText = 'Project Management';
+                document.getElementById('service1-description').innerText = 'We manage your projects from start to finish with quality assurance and schedule compliance.';
+                document.getElementById('service2-title').innerText = 'Engineering Consultations';
+                document.getElementById('service2-description').innerText = 'We provide specialized engineering consultations to help you make the right decisions for your project.';
+                document.getElementById('service3-title').innerText = 'Mediation and Negotiation';
+                document.getElementById('service3-description').innerText = 'We act as intermediaries between you and contractors to ensure you get the best offers and prices.';
+                
+                document.getElementById('engineering-services-title').innerText = 'Our Engineering Services';
+                document.getElementById('eng-service1-title').innerText = 'Building Design';
+                document.getElementById('eng-service1-description').innerText = 'Comprehensive architectural and engineering design for residential, commercial, and industrial buildings.';
+                document.getElementById('eng-service2-title').innerText = 'Soil Analysis';
+                document.getElementById('eng-service2-description').innerText = 'Conduct soil analysis tests to determine its suitability for construction and ensure stability.';
+                document.getElementById('eng-service3-title').innerText = 'Quality Management';
+                document.getElementById('eng-service3-description').innerText = 'Monitoring the quality of materials and work on site to ensure compliance with required standards.';
+                
+                document.getElementById('projects-title').innerText = 'Our Previous Projects';
+                document.getElementById('project1-title').innerText = 'Luxury Residential Project';
+                document.getElementById('project1-description').innerText = 'Full management from design to delivery, focusing on details and comfort.';
+                document.getElementById('project2-title').innerText = 'Pedestrian Bridge';
+                document.getElementById('project2-description').innerText = 'Innovative solution to facilitate pedestrian movement in a busy area.';
+                document.getElementById('project3-title').innerText = 'Modern Commercial Complex';
+                document.getElementById('project3-description').innerText = 'Complete supervision of building a comprehensive commercial complex in a strategic location.';
+                
+                document.getElementById('properties-title').innerText = 'Our Properties';
+                document.getElementById
